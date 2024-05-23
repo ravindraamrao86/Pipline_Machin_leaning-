@@ -1,6 +1,5 @@
 
 ############# 1st Step for data Ingistion
-
 import os
 import sys
 from src.exception import CustomException
@@ -17,10 +16,9 @@ class DataIngestionConfig:
     test_data_path: str=os.path.join("artifacts","test.csv")
     raw_data_path: str=os.path.join("artifacts","test.csv")
 
-
 class DataIngestion:
     def __init__(self):
-        self.ingestion_config =DataIngestionConfig()
+        self.ingestion_config = DataIngestionConfig()
     def initiate_data_ingestion(self):
         logging.info("Entered  the dta ingestion method a componenet")
         try :
