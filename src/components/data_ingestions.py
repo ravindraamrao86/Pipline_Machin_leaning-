@@ -24,7 +24,8 @@ class DataIngestion:
     def initiate_data_ingestion(self):
         logging.info("Entered  the dta ingestion method a componenet")
         try :
-            df =pd.read("")
+            df =pd.read(r"C:\Users\Laptop On Rent 078\Pipline_Machin_leaning\Pipline_Machin_leaning-\Notebook\Data\stud.csv")
+           
             logging.info("Data Ingestion completed")  
             os.makedirs(os.path.dirname(self.ingestion_config.train_data_path),exit_ok=True)
 

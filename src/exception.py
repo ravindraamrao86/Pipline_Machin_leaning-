@@ -1,5 +1,10 @@
 import sys
 import logging
+import os
+import time
+import numpy as np
+
+
 
 def error_message_deatil(error,error_deatil:sys):
     _,_,exc_tb= error_deatil.exc_info()
@@ -22,7 +27,7 @@ class CustomException(Exception):
 if __name__ == "__main__":  # type: ignore
 
     try:
-        a=1/0
+        a =1/0
     except Exception as e :
         
         raise CustomException(e,sys)        
