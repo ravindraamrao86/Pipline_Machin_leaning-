@@ -7,4 +7,6 @@ catboost
 xgboost
 Flask
 dill
-#-e .
+Flask
+pipline
+-e .
